@@ -1,0 +1,12 @@
+langchain-core==0.3.0
+langchain-huggingface
+sentence-transformers==3.2.0
+chromadb==0.4.24
+transformers==4.50.1
+tqdm==4.67.1
+
+torch==2.5.1
+torchaudio==2.5.1
+torchvision==0.20.1
+tokenizers==0.21.1
+numpy==1.24.4
