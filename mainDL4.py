@@ -1,7 +1,7 @@
 # main.py
 from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
-from chatboot import RAGHandler  # RAGHandler complet que nous avons défini
+from rag_handlerDL4  import RAGHandler  
 
 # === App Initialization ===
 app = FastAPI(title="🔍 HQ-based RAG Pipeline API")

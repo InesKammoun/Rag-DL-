@@ -10,3 +10,19 @@ torchaudio==2.5.1
 torchvision==0.20.1
 tokenizers==0.21.1
 numpy==1.24.4
+pymilvus>=2.4.0
+
+# PDF processing
+pypdf
+PyPDF2
+pdfplumber
+
+# Web framework
+fastapi
+uvicorn
+
+# Search and indexing
+whoosh
+
+# ✅ Google AI Studio
+google-generativeai
