@@ -2,6 +2,7 @@
 from fastapi import FastAPI, APIRouter
 from pydantic import BaseModel
 from rag_handlerDL4  import RAGHandler  
+from fastapi.responses import PlainTextResponse
 
 # === App Initialization ===
 app = FastAPI(title="🔍 HQ-based RAG Pipeline API")
@@ -65,22 +66,26 @@ async def search(query: QueryModel):
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
-@router.post("/answer")
+@router.post("/answer", response_class=PlainTextResponse)
 async def answer(query: QueryModel):
     try:
         print(f"[🧠] Generating answer for query: {query.query}")
-        answer_text = rag.generate_answer(
+        result = rag.generate_answer(
             query=query.query,
             top_k=query.top_k,
             final_k=query.final_k,
             window_size=query.window_size
         )
-        return {
-            "query": query.query,
-            "answer": answer_text
-        }
+        # 🔹 Si le résultat est un dictionnaire, on récupère la clé "answer"
+        if isinstance(result, dict):
+            answer_text = result.get("answer", "")
+        else:
+            answer_text = str(result)
+
+        return answer_text.strip()
     except Exception as e:
-        return {"status": "error", "message": str(e)}
+        return PlainTextResponse(f"Error: {str(e)}", status_code=500)
+
 
 
 # === Mount router ===
