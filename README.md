@@ -1004,142 +1004,6 @@ graph TB
 
 ---
 
-## 🧪 Tests et Validation
-
-### � **Suite de Tests Automatisés**
-
-#### **📊 Tests de Performance**
-| Composant | Métrique | Cible | Actuel | Status |
-|-----------|----------|-------|---------|---------|
-| 🔍 Search Latency | Temps moyen | <200ms | 150ms | ✅ |
-| 🤖 LLM Generation | Temps moyen | <1000ms | 800ms | ✅ |
-| 📊 End-to-End | Temps total | <2000ms | 1500ms | ✅ |
-| 💾 Memory Usage | RAM moyenne | <4GB | 3.2GB | ✅ |
-| 🔄 Throughput | Req/sec | >10 | 15 | ✅ |
-
-#### **🎯 Tests de Qualité**
-- **RAGas Benchmarks** : Tests automatisés sur 100+ questions
-- **A/B Testing** : Comparaison avec systèmes de référence
-- **Human Evaluation** : Validation manuelle par experts FinTech
-- **Regression Testing** : Tests de non-régression automatiques
-
----
-
-## 📊 Métriques de Production
-
-### 📈 **KPIs Système**
-
-```mermaid
-graph TB
-    subgraph "📊 Business Metrics"
-        A[👥 Active Users<br/>1,247]
-        B[💬 Daily Queries<br/>3,521]
-        C[😊 Satisfaction<br/>4.7/5]
-        D[⏱️ Avg Response Time<br/>1.2s]
-    end
-    
-    subgraph "🔧 Technical Metrics"
-        E[🎯 Accuracy<br/>87%]
-        F[📚 Knowledge Coverage<br/>94%]
-        G[🚀 Uptime<br/>99.8%]
-        H[💾 Storage Efficiency<br/>89%]
-    end
-    
-    subgraph "🏆 Quality Metrics"
-        I[🎯 Faithfulness<br/>0.85]
-        J[🔍 Relevancy<br/>0.82]
-        K[📊 Precision<br/>0.76]
-        L[✅ Correctness<br/>0.74]
-    end
-    
-    style A fill:#e8f5e8
-    style E fill:#e3f2fd
-    style I fill:#fce4ec
-```
-
-### 📊 **Monitoring Avancé**
-- **Real-time Dashboards** : Grafana + Prometheus
-- **Error Tracking** : Sentry pour le debugging
-- **Performance APM** : New Relic pour l'observabilité
-- **Alert System** : PagerDuty pour les incidents critiques
-
----
-
-## 🚀 Déploiement
-
-### 🐳 **Architecture Docker**
-
-```mermaid
-graph TB
-    subgraph "🌐 Production Environment"
-        A[🔄 Load Balancer<br/>NGINX]
-        
-        subgraph "📦 Application Layer"
-            B[🚀 FastAPI Container 1]
-            C[🚀 FastAPI Container 2]
-            D[🎨 Streamlit Container]
-        end
-        
-        subgraph "🗄️ Data Layer"
-            E[🏢 Milvus Cluster]
-            F[📚 Redis Cache]
-            G[📊 PostgreSQL Metadata]
-        end
-        
-        subgraph "🔧 Support Services"
-            H[📊 Prometheus Monitoring]
-            I[📋 Grafana Dashboard]
-            J[🗃️ Backup Service]
-        end
-    end
-    
-    A --> B
-    A --> C
-    A --> D
-    
-    B --> E
-    C --> E
-    B --> F
-    C --> F
-    
-    E --> G
-    
-    H --> B
-    H --> C
-    H --> E
-    
-    style A fill:#e3f2fd
-    style E fill:#f3e5f5
-    style H fill:#e8f5e8
-```
-
-### ☁️ **Options de Déploiement**
-- **🏢 On-Premise** : Déploiement sur infrastructure privée
-- **☁️ Cloud Native** : AWS/GCP/Azure avec auto-scaling
-- **🐳 Kubernetes** : Orchestration containerisée
-- **⚡ Edge Computing** : Déploiement en périphérie
-
----
-
-## 🔮 Roadmap et Améliorations Futures
-
-### 🎯 **Q1 2025 - Améliorations Core**
-- [ ] **🔄 RAG 2.0** : Implémentation du Self-RAG avec réflexion
-- [ ] **🌍 Multi-lingue** : Support français, espagnol, allemand
-- [ ] **📊 Graph RAG** : Intégration de knowledge graphs
-- [ ] **🎨 UI/UX** : Refonte complète de l'interface
-
-### 🚀 **Q2 2025 - Scalabilité**
-- [ ] **⚡ Micro-services** : Architecture distribuée
-- [ ] **🤖 AutoML** : Optimisation automatique des hyperparamètres
-- [ ] **📱 Mobile App** : Application native iOS/Android
-- [ ] **🔊 Voice Interface** : Interface vocale avec STT/TTS
-
-### 🔬 **Q3 2025 - Recherche Avancée**
-- [ ] **🧠 Multimodal RAG** : Support images, tableaux, graphiques
-- [ ] **🔄 Federated Learning** : Apprentissage décentralisé
-- [ ] **🎯 Personalization** : RAG personnalisé par utilisateur
-- [ ] **🔒 Privacy-Preserving** : RAG avec confidentialité différentielle
 
 
 
@@ -1148,13 +1012,10 @@ graph TB
 
 **🏆 Développé avec ❤️ pour révolutionner l'analyse documentaire FinTech**
 
-[![GitHub Stars](https://img.shields.io/github/stars/username/rag-dl?style=social)](https://github.com/username/rag-dl)
-[![GitHub Forks](https://img.shields.io/github/forks/username/rag-dl?style=social)](https://github.com/username/rag-dl)
-[![GitHub Issues](https://img.shields.io/github/issues/username/rag-dl)](https://github.com/username/rag-dl/issues)
-[![GitHub PRs](https://img.shields.io/github/issues-pr/username/rag-dl)](https://github.com/username/rag-dl/pulls)
+[![GitHub Stars](https://img.shields.io/github/stars/username/rag-dl?style=social)](https://github.com/InesKammoun/Rag-DL-)
+[![GitHub Forks](https://img.shields.io/github/forks/username/rag-dl?style=social)](https://github.com/InesKammoun/Rag-DL-)
+[![GitHub Issues](https://img.shields.io/github/issues/username/rag-dl)](https://github.com/InesKammoun/Rag-DL-/issues)
+[![GitHub PRs](https://img.shields.io/github/issues-pr/username/rag-dl)](https://github.com/InesKammoun/Rag-DL-/pulls)
 
----
-
-**📧 Contact** : [dev@rag-dl.com](mailto:dev@rag-dl.com) | **🌐 Website** : [rag-dl.com](https://rag-dl.com) | **📖 Docs** : [docs.rag-dl.com](https://docs.rag-dl.com)
 
 </div>
